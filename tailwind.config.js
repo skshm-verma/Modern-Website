@@ -9,6 +9,9 @@ module.exports = withMT({
         inter : "Inter",
         russo: "Russo One",
         roboto : "Roboto"
+      },
+      colors : {
+        dark : "#0d1117",
       }
     },
   },
