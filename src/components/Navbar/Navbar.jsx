@@ -35,7 +35,7 @@ const Navbar = () => {
         'bg-transparent h-16 w-full fixed transition ease-in-out duration-500 flex items-center z-20'
         }>
         <div className="grid grid-cols-2 justify-items-center items-center content-center">
-          <div>
+          <div className='pl-20 w-4/5'>
             <img src={logo} alt="logoImage" />
           </div>
           <div className='flex items-center w-full'>
