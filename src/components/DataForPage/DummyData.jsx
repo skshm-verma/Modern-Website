@@ -114,7 +114,7 @@ export const sliderData = [
   {
     id: "3",
     title: "Room 3",
-    text: "AxeL is your best firend for interior design, download the app and feel free to explore beautifule modern and premium designs.",
+    text: "Download AxeL the app and feel free to explore beautifule modern and premium designs.",
     type: "Room3",
     img: sofa3,
   },
