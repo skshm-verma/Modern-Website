@@ -6,6 +6,7 @@ import Header from './components/Header/Header'
 import WrapperContainer from './components/WrapperContainer/WrapperContainer'
 import MidFilterSection from './components/MidSection/MidFilterSection'
 import MidComponentParent from './components/MidSection/MidComponentParent'
+import TabsComponent from './components/MidSection/TabsComponent'
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <WrapperContainer>
           <MidFilterSection />
           <MidComponentParent/>
+          <TabsComponent></TabsComponent>
         </WrapperContainer>
       </div>
     </div>

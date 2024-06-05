@@ -11,6 +11,7 @@ module.exports = withMT({
         roboto: "Roboto"
       },
       colors: {
+        royalBlue: "#4169e1",
         dark: "#0d1117",
       }
     },
