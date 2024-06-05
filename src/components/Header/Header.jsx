@@ -1,6 +1,6 @@
 import React from 'react'
 import { Switch } from "@material-tailwind/react";
-import headerImg from '../../assets/headerImage.png'
+import headerImg from '../../../public/assets/headerImage.png'
 
 const Header = () => {
     return (

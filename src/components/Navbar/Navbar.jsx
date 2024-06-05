@@ -1,7 +1,7 @@
 import React from 'react'
 import { useState, useEffect } from 'react'
 import { navbarData } from '../DataForPage/DummyData'
-import logo from '../../assets/logo.svg'
+import logo from '../../../public/assets/logo.svg'
 import { Link } from 'react-scroll'
 
 const Navbar = () => {

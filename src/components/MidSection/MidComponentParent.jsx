@@ -1,7 +1,7 @@
 import React from 'react'
 import MidComponentItem from './MidComponentItem'
-import MidPhone1 from '../../assets/MidComponentPhone.png'
-import MidPhone2 from '../../assets/midPhone2.png'
+import MidPhone1 from '../../../public/assets/MidComponentPhone.png'
+import MidPhone2 from '../../../public/assets/midPhone2.png'
 
 const MidComponentParent = () => {
     return (
