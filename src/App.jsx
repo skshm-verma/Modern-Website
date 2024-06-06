@@ -8,6 +8,7 @@ import MidFilterSection from './components/MidSection/MidFilterSection'
 import MidComponentParent from './components/MidSection/MidComponentParent'
 import TabsComponent from './components/MidSection/TabsComponent'
 import FurnitureFlow from './components/MidSection/FurnitureFlow'
+import Cards from './components/MidSection/Cards'
 import NewsLetter from './components/MidSection/NewsLetter'
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
           <MidComponentParent/>
           <TabsComponent></TabsComponent>
           <FurnitureFlow/>
+          <Cards/>
           <NewsLetter/>
         </WrapperContainer>
       </div>
