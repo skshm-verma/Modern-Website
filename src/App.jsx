@@ -29,6 +29,7 @@ function App() {
           <Cards/>
           <NewsLetter/>
         </WrapperContainer>
+          <Footer/>
       </div>
     </div>
   )
