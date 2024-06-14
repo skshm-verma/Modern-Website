@@ -10,10 +10,14 @@ import TabsComponent from './components/MidSection/TabsComponent'
 import FurnitureFlow from './components/MidSection/FurnitureFlow'
 import Cards from './components/MidSection/Cards'
 import NewsLetter from './components/MidSection/NewsLetter'
+import PopUpButton from './components/ContactUs/PopUpButton'
 
 function App() {
   return (
     <div>
+      <div>
+        <PopUpButton></PopUpButton>
+      </div>
       <div className='bg-white'>
         <WrapperContainer navHead>
           <Navbar />
@@ -23,13 +27,13 @@ function App() {
       <div className='bg-gray-100 w-full relative'>
         <WrapperContainer>
           <MidFilterSection />
-          <MidComponentParent/>
+          <MidComponentParent />
           <TabsComponent></TabsComponent>
-          <FurnitureFlow/>
-          <Cards/>
-          <NewsLetter/>
+          <FurnitureFlow />
+          <Cards />
+          <NewsLetter />
         </WrapperContainer>
-          <Footer/>
+        <Footer />
       </div>
     </div>
   )
