@@ -1,8 +1,10 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { room } from "../DataForPage/DummyData";
 import { motion } from 'framer-motion'
+import { ThemeBgContext } from "../ContextWrapper/ThemeContext";
 
 const MidComponentItem = ({ title, img, text, reverse }) => {
+    const { theme } = useContext(ThemeBgContext);
     return (
         <div id="company">
             {reverse ?
@@ -20,11 +22,17 @@ const MidComponentItem = ({ title, img, text, reverse }) => {
                             }}
                         >
                             <h2
-                                className='text-5xl pt-10 pb-4 font-bold font-inter no-underline align-middle tracking-wide normal-case leading-none text-dark'>
+                                className={theme === "light"
+                                    ? "sm:text-4xl text-6xl pt-10 pb-4 font-bold font-inter no-underline align-middle tracking-wide normal-case leading-none text-dark"
+                                    : "sm:text-4xl text-6xl pt-10 pb-4 font-bold font-inter no-underline align-middle tracking-wide normal-case leading-none text-white"
+                                }>
                                 {title}
                             </h2>
                             <p
-                                className='text-2xl w-full pb-4 font-normal font-inter no-underline align-middle tracking-wide normal-case leading-none text-dark'>
+                                className={theme === "light"
+                                    ? "sm:text-xl text-2xl w-full pb-4 font-normal font-inter no-underline align-middle tracking-wide normal-case leading-none text-dark"
+                                    : "sm:text-xl text-2xl w-full pb-4 font-normal font-inter no-underline align-middle tracking-wide normal-case leading-none text-white"
+                                }>
                                 {text}
                             </p>
                             <button className='pushable mt-4'><span className='front'>Start Now</span></button>
@@ -48,7 +56,10 @@ const MidComponentItem = ({ title, img, text, reverse }) => {
                 (
                     <div id="room" className='flex flex-row-reverse justify-around items-center w-full'>
                         <div>
-                            <h2 className='text-6xl pt-10 pb-4 font-bold font-inter no-underline align-middle tracking-wide normal-case leading-none text-dark'>
+                            <h2 className={theme === "light"
+                                ? "sm:text-4xl text-6xl pt-10 pb-4 font-bold font-inter no-underline align-middle tracking-wide normal-case leading-none text-dark"
+                                : "sm:text-4xl text-6xl pt-10 pb-4 font-bold font-inter no-underline align-middle tracking-wide normal-case leading-none text-white"
+                            }>
                                 {title}
                             </h2>
                             <div className='flex flex-col '>
@@ -62,7 +73,10 @@ const MidComponentItem = ({ title, img, text, reverse }) => {
                                                     alt={item.name} />
                                             </div>
                                             <p
-                                                className="text-2xl font-normal font-inter no-underline align-middle tracking-wide normal-case leading-none text-dark w-full">
+                                                className={theme === "light"
+                                                    ? "sm:text-xl text-2xl font-normal font-inter no-underline align-middle tracking-wide normal-case leading-none text-dark w-full "
+                                                    : "sm:text-xl text-2xl font-normal font-inter no-underline align-middle tracking-wide normal-case leading-none text-white w-full "
+                                                }>
                                                 {item.name}
                                             </p>
                                         </div>

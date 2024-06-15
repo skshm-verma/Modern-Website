@@ -1,7 +1,9 @@
-import React from 'react'
+import React, {useContext} from 'react'
 import { motion } from 'framer-motion'
+import { ThemeBgContext } from "../ContextWrapper/ThemeContext";
 
 const MidChild = ({ data, click }) => {
+    const { theme } = useContext(ThemeBgContext);
     return (
         <div>
             <div>
@@ -19,11 +21,17 @@ const MidChild = ({ data, click }) => {
                             key={item.id}
                             className='flex flex-col relative z-10'>
                             <div className='w-[500px]'>
-                                <h3 className='text-5xl font-bold font-inter no-underline align-middle tracking-wide normal-case leading-none text-dark pb-4'>{item.title}</h3>
+                                <h3 className={theme === "light"
+                                    ? "sm:text-4xl text-6xl font-bold font-inter no-underline align-middle tracking-wide normal-case leading-none text-dark pb-4"
+                                    : "sm:text-4xl text-6xl font-bold font-inter no-underline align-middle tracking-wide normal-case leading-none text-white pb-4"
+                                }>{item.title}</h3>
                             </div>
                             <div className='flex flex-row justify-between items-center w-full'>
                                 <div>
-                                    <p className='text-2xl font-normal font-inter no-underline align-middle tracking-wide normal-case leading-none text-dark'>{item.text}</p>
+                                    <p className={theme === "light"
+                                        ? "sm:text-2xl text-3xl font-normal font-inter no-underline align-middle tracking-wide normal-case leading-none text-dark"
+                                        : "sm:text-2xl text-3xl font-normal font-inter no-underline align-middle tracking-wide normal-case leading-none text-white"
+                                    }>{item.text}</p>
                                 </div>
                                 <div className='absolute right-0 -z-10'>
                                     <motion.img

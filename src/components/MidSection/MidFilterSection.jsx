@@ -1,9 +1,10 @@
 import React from 'react'
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useContext } from 'react';
 import MidButtons from './MidButtons'
 import { sliderData } from "../DataForPage/DummyData";
 import MidChild from './MidChild';
 import { motion } from 'framer-motion'
+import { ThemeBgContext } from "../ContextWrapper/ThemeContext";
 
 const MidFilterSection = () => {
 
@@ -22,6 +23,7 @@ const MidFilterSection = () => {
         },
     ];
 
+    const { theme } = useContext(ThemeBgContext);
     const [selected, setSelected] = useState("1");
     const [click, setClick] = useState(false);
     const [data, setData] = useState([]);
@@ -54,7 +56,11 @@ const MidFilterSection = () => {
                         hidden: { opacity: 0, scale: 0 },
                     }}
                 >
-                    <h2 className='w-96 text-5xl font-bold font-inter no-underline align-middle tracking-wide normal-case leading-none text-dark'>
+                    <h2
+                        className={theme === "light"
+                            ? "sm:text-3xl sm:w-full w-96 text-6xl font-bold font-inter no-underline aligin-middle tracking-wide normal-case leading-none text-dark"
+                            : "sm:text-3xl sm:w-full w-96 text-6xl font-bold font-inter no-underline aligin-middle tracking-wide normal-case leading-none text-white"
+                        }>
                         Check out some of the news
                     </h2>
                     <MidButtons buttons={buttons} filter={filterData} selected={selected}></MidButtons>

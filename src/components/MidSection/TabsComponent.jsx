@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import {
     Tabs,
     TabsHeader,
@@ -6,9 +6,11 @@ import {
     Tab,
     TabPanel,
 } from "@material-tailwind/react";
-
 import { tabsData } from '../DataForPage/DummyData'
+import { ThemeBgContext } from "../ContextWrapper/ThemeContext";
+
 const TabsComponent = () => {
+    const { theme } = useContext(ThemeBgContext);
     return (
         <div id="features">
             <Tabs
@@ -16,10 +18,16 @@ const TabsComponent = () => {
                 value="bedroom"
                 className="grid grid-cols-2 justify-items-center items-center content-between w-full">
                 <div className='w-4/5 pl-24'>
-                    <h1 className="text-5xl pt-10 pb-4 font-bold font-inter no-underline align-middle tracking-wide normal-case leading-none text-dark">
+                    <h1 className={theme === "light"
+                        ? "sm:text-4xl text-6xl pt-10 pb-4 font-bold font-inter no-underline align-middle tracking-wide normal-case leading-none text-dark"
+                        : "sm:text-4xl text-6xl pt-10 pb-4 font-bold font-inter no-underline align-middle tracking-wide normal-case leading-none text-white"
+                    }>
                         Features
                     </h1>
-                    <p className="text-2xl  pb-4 font-normal font-inter no-underline align-middle tracking-wide normal-case leading-none text-dark">
+                    <p className={theme === "light"
+                        ? "sm:text-xl text-2xl  pb-4 font-normal font-inter no-underline align-middle tracking-wide normal-case leading-none text-dark"
+                        : "sm:text-xl text-2xl  pb-4 font-normal font-inter no-underline align-middle tracking-wide normal-case leading-none text-white"
+                    }>
                         AxeL offers many great features. You can create your own room,
                         request a service, buy modern lookiing furniture, sell a furniture
                         and so much more. Take a snek peek at each of them.
@@ -41,7 +49,10 @@ const TabsComponent = () => {
                         }}>
                         {tabsData.map(({ value, desc, linkText }) => (
                             <TabPanel key={value} value={value}>
-                                <p className="text-lg relative right-3 font-normal font-inter no-underline align-middle tracking-wide normal-case leading-none text-dark">
+                                <p className={theme === "light"
+                                    ? "text-lg relative right-3 font-normal font-inter no-underline align-middle tracking-wide normal-case leading-none text-dark"
+                                    : "text-lg relative right-3 font-normal font-inter no-underline align-middle tracking-wide normal-case leading-none text-white"
+                                }>
                                     {desc}
                                 </p>
                                 <span className="text-royalBlue font-inter leading-normal no-underline align-middle tracking-wide normal-case relative cursor-pointer right-3 hover:animate-puls">
