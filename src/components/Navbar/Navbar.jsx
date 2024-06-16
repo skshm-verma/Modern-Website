@@ -30,9 +30,9 @@ const Navbar = () => {
 
   return (
     <div className={scroll ?
-      'h-16 w-full fixed flex transition items-center ease-in-out duration-500 bg-white rounded-sm bg-clip-padding  backdrop-blur-sm bg-opacity-40 z-20'
+      'sm:hidden h-16 w-full fixed flex transition items-center ease-in-out duration-500 bg-white rounded-sm bg-clip-padding  backdrop-blur-sm bg-opacity-40 z-20'
       :
-      'bg-transparent h-16 w-full fixed transition ease-in-out duration-500 flex items-center z-20'
+      'sm:hidden bg-transparent h-16 w-full fixed transition ease-in-out duration-500 flex items-center z-20'
     }>
       <div className="grid grid-cols-2 justify-items-center items-center content-center">
         <div className='pl-20 w-4/5'>

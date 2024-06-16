@@ -16,8 +16,8 @@ const TabsComponent = () => {
             <Tabs
                 id="custom-animation"
                 value="bedroom"
-                className="grid grid-cols-2 justify-items-center items-center content-between w-full">
-                <div className='w-4/5 pl-24'>
+                className="sm:grid-cols-1 grid grid-cols-2 justify-items-center items-center content-between w-full">
+                <div className='sm:w-full sm:pl-4 w-4/5 pl-24'>
                     <h1 className={theme === "light"
                         ? "sm:text-4xl text-6xl pt-10 pb-4 font-bold font-inter no-underline align-middle tracking-wide normal-case leading-none text-dark"
                         : "sm:text-4xl text-6xl pt-10 pb-4 font-bold font-inter no-underline align-middle tracking-wide normal-case leading-none text-white"
@@ -33,7 +33,7 @@ const TabsComponent = () => {
                         and so much more. Take a snek peek at each of them.
                     </p>
 
-                    <TabsHeader className='flex justify-center items-center content-center bg-gray-100'>
+                    <TabsHeader className='sm:flex-col sm:w-[90%] sm:ml-3 flex justify-center items-center content-center bg-gray-100'>
                         {tabsData.map(({ label, value }) => (
                             <Tab key={value} value={value}>
                                 <p className="text-royalBlue font-inter leading-normal no-underline align-middle tracking-wide normal-case">
@@ -71,7 +71,7 @@ const TabsComponent = () => {
                     >
                         {tabsData.map(({ value, img }) => (
                             <TabPanel key={value} value={value}>
-                                <img className="h-[650px]" src={img} alt="phone"></img>
+                                <img className="sm:h-[475px] h-[650px]" src={img} alt="phone"></img>
                             </TabPanel>
                         ))}
                     </TabsBody>

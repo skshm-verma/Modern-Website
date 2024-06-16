@@ -25,7 +25,7 @@ const Cards = () => {
                     : "sm:text-5xl text-white text-6xl font-bold pt-20 no-underline font-inter align-middle tracking-wide normal-case leading-none cursor-pointer"
                 }>
                     Request a demo
-                </h2>x
+                </h2>
                 <p className={theme === "light"
                     ? "sm:text-xl text-dark text-2xl font-normal pt-10 no-underline font-inter align-middle tracking-wide normal-case leading-none cursor-pointer"
                     : "sm:text-xl text-white text-2xl font-normal pt-10 no-underline font-inter align-middle tracking-wide normal-case leading-none cursor-pointer"
@@ -49,10 +49,10 @@ const Cards = () => {
                     </div>
                 </div>
             </div>
-            <div className="grid grid-cols-3 items-center gap-8 content-between w-full pt-32">
+            <div className="sm:grid-cols-1 grid grid-cols-3 items-center gap-8 content-between w-full pt-32">
                 {cardData.map((item) => (
                     <motion.div
-                        className="mx-auto pl-20"
+                        className="sm:pl-0 mx-auto pl-20"
                         key={item.id}
                         initial="hidden"
                         whileInView="visible"

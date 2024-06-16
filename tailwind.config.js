@@ -18,15 +18,6 @@ module.exports = withMT({
       wrapperBg: "url(assets/wrapperBackground.svg)",
       wrapperDark: "url(assets/wrapperDark.svg)",
     },
-    container: {
-      screens: {
-        sm: "640px",
-        md: "767px",
-        lg: "1140px",
-        xl: "1400px",
-        "2xl": "1800px",
-      },
-    },
     screens: {
       "2xl": { max: "1535px" },
       // => @media (max-width: 1535px) { ... }

@@ -19,8 +19,8 @@ const MidChild = ({ data, click }) => {
                             exit={{ scale: 0.8, opacity: 0 }}
                             transition={{ type: "spring", duration: 1.5 }}
                             key={item.id}
-                            className='flex flex-col relative z-10'>
-                            <div className='w-[500px]'>
+                            className='sm:pt-10 sm:right-2 flex flex-col relative z-10'>
+                            <div className='sm:w-full w-[500px]'>
                                 <h3 className={theme === "light"
                                     ? "sm:text-4xl text-6xl font-bold font-inter no-underline align-middle tracking-wide normal-case leading-none text-dark pb-4"
                                     : "sm:text-4xl text-6xl font-bold font-inter no-underline align-middle tracking-wide normal-case leading-none text-white pb-4"
