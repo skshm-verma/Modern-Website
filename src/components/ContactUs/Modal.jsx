@@ -13,7 +13,7 @@ const Modal = ({ open, setOpen }) => {
   return (
     <div>
       <motion.div
-        className="sm:right-3 sm:bottom-2 bg-white fixed right-4 bottom-2 z-20 flex flex-col rounded-2xl"
+        className="sm:right-2 sm:bottom-2 bg-white fixed right-4 bottom-2 z-20 flex flex-col rounded-2xl"
         initial={{ scale: 1, opacity: 0, height: 0, width: 0 }}
         animate={{
           x: open ? -30 : 0,

@@ -46,7 +46,7 @@ const MidFilterSection = () => {
         <div className='mx-auto pt-72 pb-56 mt-16' id='news'>
             <div className='sm:grid-cols-1 grid grid-cols-2 justify-items-center items-center'>
                 <motion.div
-                    className='sm:pt-0 sm:w-full sm:pl-14 w-4/5 mx-auto pl-24'
+                    className='sm:pt-0 sm:w-full sm:pl-10 w-4/5 mx-auto pl-24'
                     initial="hidden"
                     whileInView="visible"
                     viewport={{ once: true }}
