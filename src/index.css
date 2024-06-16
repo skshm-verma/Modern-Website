@@ -75,5 +75,16 @@
           font-family: "Inter";
           transform: translateY(-6px);
         }
+
+        .front2{
+            display: block;
+            padding: 16px;
+            border-radius: 25px;
+            font-size: 1.15rem;
+            background: hsl(202 99% 38%);
+            color: white;
+            font-family: "Inter";
+            transform: translateY(-6px);
+        }
       }
 }

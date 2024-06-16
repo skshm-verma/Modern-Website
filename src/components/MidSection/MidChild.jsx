@@ -5,7 +5,7 @@ import { ThemeBgContext } from "../ContextWrapper/ThemeContext";
 const MidChild = ({ data, click }) => {
     const { theme } = useContext(ThemeBgContext);
     return (
-        <div>
+        <div className='sm:mt-12'>
             <div>
                 {data.map((item) => {
                     return (
@@ -35,7 +35,7 @@ const MidChild = ({ data, click }) => {
                                 </div>
                                 <div className='absolute right-0 -z-10'>
                                     <motion.img
-                                        className="w-full "
+                                        className="w-full"
                                         initial={{ height: 0, opacity: 0 }}
                                         animate={{ height: click ? "525px" : "525px", opacity: 1 }}
                                         transition={{ type: "tween", duration: 3 }}

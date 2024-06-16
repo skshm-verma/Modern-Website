@@ -38,8 +38,8 @@ const NewsLetter = () => {
                         />
                     </div>
                     <div>
-                        <Button color="blue" onClick={handleEmail} ripple={true} className="ml-2 ">
-                            Button
+                        <Button color="blue" onClick={handleEmail} ripple={true} className="ml-2 sm:ring">
+                            Send
                         </Button>
                     </div>
                 </div>

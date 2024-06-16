@@ -28,7 +28,7 @@ const Header = ({ topRef }) => {
                                     : "sm:text-4xl sm:pr-2 text-white text-6xl font-petitFormal font-bold"
                             } >
                             Furniture</span>
-                        {" "} <span className='sm:text-2xl sm:align-top text-6xl'>Responsive App</span>
+                        {" "} <span className='sm:text-2xl sm:block sm:pt-1 text-5xl font-russonOne font-medium no-underline align-middle tracking-wide normal-case leading-normal '>Responsive App</span>
                     </h1>
                     <div className='mt-4'>
                         <p
