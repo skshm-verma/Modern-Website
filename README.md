@@ -43,7 +43,7 @@ In the Demo Section, customers can request a demo of our services and view custo
 
 The Sign-Up Section allows users to subscribe with their email to receive updates about our latest work and news.
 
-### Footer Section 🦶
+### Footer Section 
 
 The Footer Section contains all the necessary links to our features and policies.
 
@@ -57,9 +57,13 @@ A chat icon is displayed at the bottom right corner, enabling customers to raise
 - Tailwind CSS
 - Material UI
 - Framer
-- Vite bundler
+- Vite
 
 ## Visuals
+![screencapture-modern-website-kohl-vercel-app-2024-06-17-17_19_11](https://github.com/skshm-verma/Modern-Website/assets/106864834/e302dcf0-239f-44a2-8bfe-2207fb194caf)
+#
+![screencapture-modern-website-kohl-vercel-app-2024-06-17-17_20_04](https://github.com/skshm-verma/Modern-Website/assets/106864834/ec2d688a-55e2-4e1e-897c-3f78331ae193)
+
 
 ## Getting Started
 
